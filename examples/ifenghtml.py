@@ -3919,3 +3919,22 @@ $(".member_recruit_close").click(function(){
 </body>
 </html>
 '''
+mypaths=["//title",
+         "//div:class=footer-grid-1//ul",
+         "//div:class=main-3372DkS6 clearfix//div:class=content-14uJp0dk//div:class=topNews-2BQWVUtl//h3",
+         "//div:class=main-3372DkS6 clearfix//div:class=content-14uJp0dk//div//ul:class=news-stream-basic-news-list//li//div:class=news-stream-newsStream-news-item-infor//h2//a",
+         "//div:class=aside-2XIR61CP//div:class=news_group-G8j50iRw//ul//li:class=no_image-17COww2d//a",
+         "//div:ifeng_ui_pc_sliders-item=horizonta//a//div:class=link-1sBICVOA",
+         "//ul:class=list_menu-2g1cRU0C//li//a",
+         "//div:id=main_nav//ul:class=list_menu-2g1cRU0C//li//a",
+         "//div:class=module-news-main//ul:class=Review-item//li//h4//a",       #guanchahtml
+         "//div:class=module-fengwen-list//ul:class=fengwen-list//li//h4:class=module-title//a",
+         "//div:class=module-news gray//div:class=module-news-main//div:class=resemble-art-black c_hidden//a"]
+path=mypaths[-1]
+results=match(path, ifenghtml)
+print('<rule>', path, '</rule>')
+print('<count>', str(len(results)), '</count>')
+counter=0
+for result in results:
+	counter=counter+1
+	print('<result>['+str(counter)+']', result, '[/'+str(counter)+']</result>')
