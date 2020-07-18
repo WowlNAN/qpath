@@ -1,3 +1,14 @@
+# -*- coding: UTF-8 -*-
+# !/usr/bin/env python
+'''
+
+author: MRN6
+
+updated: Jul. 18th, 2020 Sat. 03:40PM
+
+LICENSE: CC0
+
+'''
 ifenghtml='''
 
 <!DOCTYPE html>
