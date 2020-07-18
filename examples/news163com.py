@@ -3751,3 +3751,30 @@ yPx:450
 </body>
 </html>
 '''
+mypaths=["//div:class=column_main//h3",
+         "//div:class=column_main//div:class=photo",
+         "//div:class=column_main//ul//li",
+         "//div:class=bd",
+         "//div:class=bd//div:class=ns_area list", 
+         "//div:class=bd//div:class=ns_area list//li",
+         "//div:class=bd//div:class=ns_area list//ul//li//a", 
+         "//div:class=bd//div:class=ns_area list//ul//a",
+         "//div:class=ntes-quicknav-content//ul//li", 
+         "//div:class=ntes-quicknav-content//ul//li//a",
+         "//div:class=mt35 mod_hot_rank clearfix//ul//li", 
+         "//div:class=mt35 mod_hot_rank clearfix//ul//a",
+         "//div:class=mt35 mod_money//ul//li",
+         "//div:class=mt35 mod_money//div:class=bg//h3",
+         "//div:class=bottomnews_main clearfix//h2",
+         "//div:class=ns_area index_media//ul//li//a",
+         "//meta:http-equiv=Content-Type",
+         "//meta:name=keywords",
+         "//title"]
+path=mypaths[-1]
+results=match(path, news163html)
+print('<rule>', path, '</rule>')
+print('<count>', str(len(results)), '</count>')
+counter=0
+for result in results:
+	counter=counter+1
+	print('<result>['+str(counter)+']', result, '[/'+str(counter)+']</result>')
