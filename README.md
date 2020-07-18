@@ -1,5 +1,6 @@
 #
-# project: qpath
+# qpath
+# author: MRN
 # version: 1.0
 # description: HTML tag selector, with which one can pick out content of the specific tag in a few codes.
 # license: cc0
