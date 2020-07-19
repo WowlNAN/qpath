@@ -1,4 +1,4 @@
-# -*- coding: UTF-8 -*-
+﻿# -*- coding: UTF-8 -*-
 # !/usr/bin/env python
 '''
 
@@ -9,8 +9,11 @@ updated: Jul. 18th, 2020 Sat. 03:40PM
 LICENSE: CC0
 
 '''
+import sys
+sys.path.append("..")
+from lib.qpath import *
 
-news163html='''
+html='''
 
  <!DOCTYPE HTML>
 <!--[if IE 6 ]> <html id="ne_wrap" class="ne_ua_ie6 ne_ua_ielte8"> <![endif]-->
@@ -3770,8 +3773,8 @@ mypaths=["//div:class=column_main//h3",
          "//meta:http-equiv=Content-Type",
          "//meta:name=keywords",
          "//title"]
-path=mypaths[-1]
-results=match(path, news163html)
+path=mypaths[-9]
+results=match(path, html)
 print('<rule>', path, '</rule>')
 print('<count>', str(len(results)), '</count>')
 counter=0
