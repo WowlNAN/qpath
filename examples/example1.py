@@ -11,7 +11,7 @@ LICENSE: CC0
 '''
 import sys
 sys.path.append('..')
-from lib.qpath import *
+from lib.qpath import qpath
 html='''
 
 <!DOCTYPE html>
@@ -3637,7 +3637,7 @@ mypaths=["//div:class=module-news-main//ul:class=Review-item//li//h4//a",
          "//div:class=module-fengwen-list//ul:class=fengwen-list//li//h4:class=module-title//a",
          "//div:class=module-news gray//div:class=module-news-main//div:class=resemble-art-black c_hidden//a"]
 path=mypaths[-1]
-results=match(path, html)
+results=qpath.match(path, html)
 print('<rule>', path, '</rule>')
 print('<count>', str(len(results)), '</count>')
 counter=0

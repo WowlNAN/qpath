@@ -11,7 +11,7 @@ LICENSE: CC0
 '''
 import sys
 sys.path.append("..")
-from lib.qpath import *
+from lib.qpath import qpath
 
 html='''
 
@@ -3774,7 +3774,7 @@ mypaths=["//div:class=column_main//h3",
          "//meta:name=keywords",
          "//title"]
 path=mypaths[-9]
-results=match(path, html)
+results=qpath.match(path, html)
 print('<rule>', path, '</rule>')
 print('<count>', str(len(results)), '</count>')
 counter=0
