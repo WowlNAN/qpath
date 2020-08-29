@@ -1,5 +1,5 @@
 # qpath
-# author: MRN
+# author: WowlNAN
 # version: 1.0
 # original repository: https://github.com/WowlNAN/qpath
 # description: HTML tag selector, with which one can pick out content of the specific tag in a few codes.
